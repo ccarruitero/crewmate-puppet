@@ -1,0 +1,2 @@
+# crewmate-puppet
+crewmate-puppet is a puppet receipe for crewmate developer
