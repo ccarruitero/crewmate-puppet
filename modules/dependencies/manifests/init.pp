@@ -1,41 +1,54 @@
 class dependencies(
 ) {
-  package{"libdbd-mysql-perl":
+  package{"build-essential":
     ensure => present
   }
-  package{"libdbi-perl":
+  package{"ruby":
+    ensure => present
+  }
+  package{"ruby-dev":
+    ensure => present
+  }
+  package{"libmysqlclient15-dev":
+    ensure => present
+  }
+  package{"libcurl4-openssl-dev":
+    ensure => present
+  }
+  package{"libopenssl-ruby":
+    ensure => present
+  }
+  package{"libpcre3-dev":
+    ensure => present
+  }
+  package{"libxml2-dev":
+    ensure => present
+  }
+  package{"libxslt-dev":
     ensure => installed
   }
-  package{"libmysqlclient18":
+  package{"libreadline5-dev":
     ensure => installed
   }
-  package{"libnet-daemon-perl":
+  package{"apache2":
     ensure => installed
   }
-  package{"libplrpc-perl":
+  package {"apache2-prefork-dev":
     ensure => installed
   }
-  package{"mysql-client-5.5":
+  package {"libapr1-dev":
     ensure => installed
   }
-  package {"mysql-client-core-5.5":
+  package {"imagemagick":
     ensure => installed
   }
-  package {"mysql-common":
+  package {"libpq-dev":
     ensure => installed
   }
-
-# for rvm
-  package {"libxml2":
+  package {"libmysql-ruby":
     ensure => installed
   }
-  package {"libxml2-dev":
-    ensure => installed
-  }
-  package {"libxslt1-dev":
-    ensure => installed
-  }
-  package {"libxslt1.1":
+  package {"libmysqlclient-dev":
     ensure => installed
   }
 }
