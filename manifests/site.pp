@@ -7,7 +7,7 @@ include curl
 include git
 include nginx
 class { 'mysql::install': }
-include capistrano
+include rails
 include monit
 
 # set order
@@ -16,5 +16,5 @@ Class['curl'] ->
 Class['git'] ->
 Class['nginx'] ->
 Class['mysql::install'] ->
-Class['capistrano'] ->
+Class['rails'] ->
 Class['monit']
